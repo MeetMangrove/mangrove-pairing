@@ -14,6 +14,11 @@ const {
   AIRTABLE_MEMBERS
 } = process.env
 
+if (!AIRTABLE_MEMBERS && !AIRTABLE_APPLICANTS && !AIRTABLE_PAIRING) {
+  console.log('Error: Specify AIRTABLE_MEMBERS, AIRTABLE_APPLICANTS and AIRTABLE_PAIRING in a .env file')
+  process.exit(1)
+}
+
 // reads all records from a table
 const _getAllRecords = (select) => {
   return new Promise((resolve, reject) => {
