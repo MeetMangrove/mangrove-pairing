@@ -1,4 +1,10 @@
-# Mangrove Pairing
+# Mangrove Pairing (deprecated)
+                  
+*This repository is no longer maintain anymore, see [Familybot](https://github.com/MeetMangrove/familybot)*
+
+
+<---------->
+
 
 Automatically pair people based on the skills they can teach and those
 they want to learn.
